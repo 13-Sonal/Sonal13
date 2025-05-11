@@ -1,0 +1,402 @@
+.sidebar {
+  width: 280px;
+  background-color: #fff;
+  border-right: 1px solid #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  height: 100vh;
+  z-index: 10;
+}
+
+.logo {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.logo h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.logo h1::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: #000;
+}
+
+.nav-menu {
+  flex-grow: 1;
+  padding: 40px 0;
+}
+
+.nav-menu ul {
+  list-style: none;
+}
+
+.nav-menu li {
+  margin-bottom: 8px;
+}
+
+.nav-menu a {
+  display: block;
+  padding: 14px 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  transition: all 0.3s;
+}
+
+.nav-menu a.active {
+  background-color: #ffd500;
+  color: #000;
+}
+
+.nav-menu a:hover:not(.active) {
+  background-color: #f5f5f5;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  border-top: 1px solid #e0e0e0;
+}
+
+.social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  margin: 0 5px;
+  color: #333;
+  transition: all 0.3s;
+}
+
+.social-icons a:hover {
+  background-color: #f5f5f5;
+}
+
+.copyright {
+  padding: 15px;
+  font-size: 0.75rem;
+  text-align: center;
+  color: #777;
+}
+
+.main-content {
+  margin-left: 280px;
+  flex-grow: 1;
+  position: relative;
+}
+
+/* Content sections */
+.content-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 40px;
+}
+
+.content-section:not(.active) {
+  display: none;
+}
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  min-height: 100vh;
+}
+
+.profile-container {
+  position: relative;
+  width: 450px;
+}
+
+.profile-frame {
+  position: relative;
+  border: 2px solid #000;
+  padding: 10px;
+  z-index: 2;
+}
+
+.profile-img {
+  width: 100%;
+  display: block;
+}
+
+.yellow-block {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  background-color: #ffd500;
+  bottom: -20px;
+  right: -20px;
+  z-index: 1;
+}
+
+.back-button {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.3s;
+  z-index: 5;
+}
+
+.back-button:hover {
+  background-color: #333;
+}
+
+.hero-content {
+  padding-left: 60px;
+}
+
+.hero-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1.1;
+  margin-bottom: 30px;
+}
+
+.hero-title::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: #000;
+  margin-top: 20px;
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.signature {
+  max-width: 200px;
+  margin-top: 20px;
+}
+
+/* Content Styling */
+.content-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 80px 20px 40px;
+}
+
+.content-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.content-title::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 80px;
+  height: 4px;
+  background-color: #000;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  margin: 30px 0;
+  border: 2px solid #000;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card {
+  background-color: #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 30px 0;
+  transition: all 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.card-content {
+  padding: 30px;
+}
+
+.card h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+}
+
+.card p {
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.button {
+  display: inline-block;
+  background-color: #ffd500;
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  transition: all 0.3s;
+}
+
+.button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.social-card {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+
+.social-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.social-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  font-size: 1.5rem;
+}
+
+.social-card h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.social-card p {
+  margin: 5px 0 0;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.linkedin {
+  color: #0077B5;
+}
+
+.github {
+  color: #333;
+}
+
+.medium {
+  color: #000;
+}
+
+.youtube {
+  color: #FF0000;
+}
+
+@media (max-width: 1200px) {
+  .hero-section {
+    flex-direction: column;
+    padding: 80px 40px 40px;
+  }
+  
+  .profile-container {
+    margin-bottom: 40px;
+  }
+  
+  .hero-content {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+  
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    border-right: none;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .main-content {
+    margin-left: 0;
+  }
+  
+  .profile-container {
+    width: 100%;
+    max-width: 450px;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+  }
+  
+  .content-title {
+    font-size: 2.2rem;
+  }
+}
