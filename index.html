@@ -1,1 +1,224 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sonal Sachdev - Website Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+  <link rel="stylesheet" href="index.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+    
+    body {
+      display: flex;
+      min-height: 100vh;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <div class="logo">
+      <h1>Sonal Sachdev</h1>
+    </div>
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+        <li><a href="#speaker" class="nav-link" data-section="speaker">Featured Speaker</a></li>
+        <li><a href="#mentor" class="nav-link" data-section="mentor">Mentor</a></li>
+        <li><a href="#blogs" class="nav-link" data-section="blogs">Blogs</a></li>
+        <li><a href="#connect" class="nav-link" data-section="connect">Let's Connect</a></li>
+      </ul>
+    </nav>
+    <div class="social-icons">
+      <a href="https://github.com/13-Sonal" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/sonal-sachdev13" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://medium.com/@sachdevsonal9131" target="_blank"><i class="fab fa-medium-m"></i></a>
+      <a href="https://www.youtube.com/watch?v=37HJZxiGIpQ" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+    <div class="copyright">
+      &copy; 2025 Sonal Sachdev<br>
+      Software Developer & Speaker
+    </div>
+  </div>
+  
+  <div class="main-content">
+    <a href="#home" class="back-button">
+      <i class="fas fa-arrow-left"></i>
+    </a>
+    
+    <div id="home" class="content-section hero-section active">
+      <div class="profile-container">
+        <div class="profile-frame">
+          <img src="SonalImg.jpg" alt="Sonal Sachdev" class="profile-img">
+        </div>
+        <div class="yellow-block"></div>
+      </div>
+      
+      <div class="hero-content">
+        <h2 class="hero-title">Software Developer</h2>
+        <p class="hero-description">
+          Hi there! I'm a passionate software developer specializing in Ruby on Rails. I love building scalable applications and contributing to open-source projects. My goal is to create user-friendly experiences while maintaining clean and efficient code.
+        </p>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgNjAiPjxwYXRoIGQ9Ik0xNSAyMGMwIDAgMTUgMTAgMjUgMTVzMzUgNSA1MCAwYzE1LTUgMjAtOCAzMC0xNSAxMC03IDE1LTEwIDI1LTEwIDEwIDAgMTUgNSAyMCAxMHM1IDEwIDEwIDE1YzUgNSA4IDEwIDAgMTUtOCAxMC0xNSAxMC0yMCAxMHMtMTAtNS0xNS0xMGMtNS01LTUtOC0xMC0xNS01LTctNS0xMC0xNS0xMC0xMCAwLTE1IDUtMjAgMTBzLTEwIDUtMjAgMTBjLTEwIDUtMjAgMTAtMzAgMTAtMTAgMC0xNS01LTIwLTEwLTUtNS0xMC0xMC0xMC0xNXoiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzAwMCIgc3Ryb2tlLXdpZHRoPSIyIi8+PC9zdmc+" 
+             class="signature" alt="Signature">
+      </div>
+    </div>
+    
+    <div id="speaker" class="content-section">
+      <div class="content-container">
+        <h2 class="content-title">Featured Speaker</h2>
+        <p>Watch my latest talk at RailsConf 2024 which speaks about my journey in Rails</p>
+        
+        <div class="video-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/37HJZxiGIpQ" 
+                  title="YouTube video player" frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen></iframe>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <h3>Speaking Engagements</h3>
+            <p>This journey highlights my evolution from starting as a Manual QA to exploring diverse technologies and building sustainable, high-impact websites.</p>
+            <a href="https://www.youtube.com/watch?v=37HJZxiGIpQ" target="_blank" class="button">Watch Full Talk</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="mentor" class="content-section">
+      <div class="content-container">
+        <h2 class="content-title">Mentorship</h2>
+        <p>I believe in giving back to the community through mentorship. I regularly volunteer at Rails Girls events and other tech initiatives to help newcomers to tech find their way.</p>
+        
+        <div class="card">
+          <div class="card-content">
+            <h3>Rails Girls Mentor</h3>
+            <p>As a mentor at Rails Girls events, I help beginners learn Ruby on Rails and build confidence in tech. These workshops provide a supportive environment for people to take their first steps in development.</p>
+            <a href="https://www.linkedin.com/posts/sonal-sachdev13_railsabrgirls-ruby-activity-7305052361750683648-d1x-?utm_source=share&utm_medium=member_desktop" target="_blank" class="button">View LinkedIn Post</a>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-content">
+            <h3>Community Involvement</h3>
+            <p>Having once been a learner myself, I’m now passionate about giving back—mentoring aspiring developers and building inclusive tech communities where everyone can grow and thrive.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="blogs" class="content-section">
+      <div class="content-container">
+        <h2 class="content-title">Blogs & Writing</h2>
+        <p>I regularly share my thoughts, experiences, and technical tutorials through writing. Check out my latest articles on Medium.</p>
+        
+        <div class="card">
+          <div class="card-content">
+            <h3>Latest Articles</h3>
+            <p>I write about Ruby on Rails, test automation tips, community building, and tech culture. Writing helps me clear my thoughts and share what I learn with others in tech.
+            </p>
+            <a href="https://medium.com/@sachdevsonal9131" target="_blank" class="button">Read on Medium</a>
+          </div>
+        </div>
+        
+        <div class="social-card">
+          <div class="social-icon medium">
+            <i class="fab fa-medium"></i>
+          </div>
+          <div>
+            <h3>Follow me on Medium</h3>
+            <p>@sachdevsonal9131</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="connect" class="content-section">
+      <div class="content-container">
+        <h2 class="content-title">Let's Connect</h2>
+        <p>I'm always open to connecting with fellow developers, speakers, and tech enthusiasts. Reach out to me through any of these platforms:</p>
+        
+        <a href="https://www.linkedin.com/in/sonal-sachdev13" target="_blank" class="social-card">
+          <div class="social-icon linkedin">
+            <i class="fab fa-linkedin-in"></i>
+          </div>
+          <div>
+            <h3>LinkedIn</h3>
+            <p>linkedin.com/in/sonal-sachdev13</p>
+          </div>
+        </a>
+        
+        <a href="https://github.com/13-Sonal" target="_blank" class="social-card">
+          <div class="social-icon github">
+            <i class="fab fa-github"></i>
+          </div>
+          <div>
+            <h3>GitHub</h3>
+            <p>github.com/13-Sonal</p>
+          </div>
+        </a>
+        
+        <div class="card">
+          <div class="card-content">
+            <h3>Work Inquiries</h3>
+            <p>Interested in working together? I'm open to consulting opportunities, speaking engagements, and technical writing projects. Feel free to reach out through LinkedIn or email.</p>
+            <p><strong>Email:</strong> sachdevsonal9131@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const navLinks = document.querySelectorAll('.nav-link');
+      const sections = document.querySelectorAll('.content-section');
+      const backButton = document.querySelector('.back-button');
+      
+      function showSection(sectionId) {
+        sections.forEach(section => {
+          section.classList.remove('active');
+        });
+        
+        document.getElementById(sectionId).classList.add('active');
+        
+        navLinks.forEach(link => {
+          if (link.getAttribute('data-section') === sectionId) {
+            link.classList.add('active');
+          } else {
+            link.classList.remove('active');
+          }
+        });
+      }
+      
+      navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          const sectionId = this.getAttribute('data-section');
+          showSection(sectionId);
+        });
+      });
+      
+      backButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        showSection('home');
+      });
+      
+      if (window.location.hash) {
+        const sectionId = window.location.hash.substring(1);
+        if (document.getElementById(sectionId)) {
+          showSection(sectionId);
+        }
+      }
+    });
+  </script>
+</body>
+</html>
